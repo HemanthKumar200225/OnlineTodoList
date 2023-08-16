@@ -18,9 +18,12 @@ public class App {
 		Authenticate a = new Authenticate();
 		Pair<Integer, User> current_user = new Pair<Integer, User>();
 		boolean run = true;
-		System.out.println(ConsoleColors.GREEN_BOLD_BRIGHT + "Hello welcome to the online todo list maker!"+ConsoleColors.RESET );
+		System.out.println("--------------------------------------------------------------------");
+		System.out.println(ConsoleColors.GREEN_BOLD_BRIGHT + 
+						   "           Hello welcome to the online todo list maker!             "+ConsoleColors.RESET );
+		System.out.println("--------------------------------------------------------------------");
 		while(run) {
-			System.out.println("Press 1 to Sign in\nPress 2 to Register\nPress 0 to exit Application");
+			System.out.println("\nPress 1 to Sign in\nPress 2 to Register\nPress 0 to exit Application");
 			
 			int option = scanInt();
 			scanLine();

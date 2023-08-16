@@ -207,6 +207,7 @@ public class User {
 			String title = scanLine();
 			todo_edit.setDesc(title);
 		}
+		
 //		sc.close();
 		todo_edit.toString();
 	}
@@ -265,7 +266,9 @@ public class User {
 	            for (Map.Entry<Integer, Todo> innerEntry : innerMap.entrySet()) {
 	                int todo_id = innerEntry.getKey();
 	                Todo todo = innerEntry.getValue();
+	                System.out.println("-----------------------------------------------------------------");
 	                System.out.println("todo_id: " + todo_id + ", Todo: " + todo.toString());
+	                System.out.println("-----------------------------------------------------------------");
 	            }
 	            System.out.println();
 			}
@@ -273,7 +276,7 @@ public class User {
 		}
 		else {
 			System.out.println("Nothing to show");
-			System.out.println("--------------------------------");
+            System.out.println("-----------------------------------------------------------------");
 			return false;
 		}
 //		return false;
@@ -289,29 +292,36 @@ public class User {
 		}
 		else {
 			System.out.println("Nothing to show");
-			System.out.println("--------------------------------");
+            System.out.println("-----------------------------------------------------------------");
 			return false;
 		}
 	}
 	public void displayAllTodos() {
 		
 		if(!this.todo_list.isEmpty()) {
-		System.out.println("Unfinished todo tasks:\n"
-				+ "--------------------------------------------------------");
+
+	    System.out.println("-----------------------------------------------------------------");
+		System.out.println("						Unfinished todo tasks					 ");
+        System.out.println("-----------------------------------------------------------------");
+//				+ "--------------------------------------------------------");
 		displayUnfinishedTodos();
 		}
 		else
 			System.out.println("--------------------------------------------------------\n"
-					+ "No unfinished todo tasks here");
+					+ 		   "			No unfinished todo tasks here				/n"+
+							   "--------------------------------------------------------");
 		
 		if(!this.finished_todo.isEmpty()) {
-			System.out.println("\n\nFinished todo tasks:\n"
+			System.out.println("\n\n"
+					+ "--------------------------------------------------------/n"
+					+ "						Finished todo tasks:				\n"
 					+ "--------------------------------------------------------");
 			displayFinishedTodos();
 		}
 		else
 			System.out.println("--------------------------------------------------------\n"
-					+ "No finished todo tasks here");
+					+ 		   "				No finished todo tasks here"
+					+ 		   "--------------------------------------------------------");
 	}
 
 //	to string

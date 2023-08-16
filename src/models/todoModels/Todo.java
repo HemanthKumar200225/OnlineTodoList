@@ -1,6 +1,6 @@
 package models.todoModels;
 
-public class Todo {
+public abstract class Todo {
 	String title;
 	String desc;
 	public Todo(String title, String desc) {
