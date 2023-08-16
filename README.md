@@ -1,2 +1,0 @@
-# TodoList
-The Console-Based Core Java OOPs Todo List application is designed to assist users in effectively managing their tasks and to-do lists. By offering a console-based interface, users can easily create, organize, view, and manage their tasks across three distinct categories: Shop, Home, and Job. The project leverages object-oriented programming principles to ensure a modular and extensible design. 
